@@ -2,75 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Blog</title>
+  <title>Simple Money & Web3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
+      font-family: system-ui, Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.7;
     }
 
     header {
-      background: #4f46e5;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
     }
 
     nav {
       background: white;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
     }
 
     nav a {
-      margin: 0 10px;
+      margin: 0 12px;
       text-decoration: none;
       color: #4f46e5;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 20px;
+      padding: 24px;
     }
 
-    .post {
+    .card {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
     }
 
-    .post h2 {
+    .card h2 {
       margin-top: 0;
       color: #4f46e5;
     }
 
-    .post p {
+    .card p {
       font-size: 16px;
     }
 
     footer {
       background: #111827;
-      color: white;
+      color: #9ca3af;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
     }
 
     @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
       nav a {
         display: block;
         margin: 8px 0;
@@ -82,41 +94,54 @@
 <body>
 
   <header>
-    <h1>Welcome to My Blog</h1>
-    <p>Simple ideas. Real value.</p>
+    <h1>Simple Money & Web3</h1>
+    <p>Learn money, crypto, and the future — explained simply.</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Blog</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
+  <div class="container" id="home">
 
-    <div class="post">
-      <h2>My First Blog Post</h2>
+    <div class="card" id="blog">
+      <h2>📘 Welcome</h2>
       <p>
-        Welcome to my blog! This is my first post.
-        Here I will share simple ideas about life, money,
-        learning, and growth.
+        This blog is created to help beginners understand
+        <strong>money, saving, investing, crypto, and Web3</strong>
+        in a simple and friendly way.
       </p>
     </div>
 
-    <div class="post">
-      <h2>Why I Started This Blog</h2>
+    <div class="card">
+      <h2>💰 How to Start Managing Money</h2>
       <p>
-        I created this blog to share knowledge in a simple
-        and friendly way. I hope it helps and inspires you.
+        Managing money doesn’t need to be complicated.
+        Start by tracking income, controlling expenses,
+        and building a small emergency fund.
       </p>
     </div>
 
-  </div>
+    <div class="card">
+      <h2>🌐 What is Web3?</h2>
+      <p>
+        Web3 is the future of the internet where users
+        own their data, money, and identity using blockchain
+        technology.
+      </p>
+    </div>
 
-  <footer>
-    © 2026 My Blog | Built with GitHub Pages
-  </footer>
+    <div class="card" id="about">
+      <h2>🙋 About Me</h2>
+      <p>
+        Hi! I’m a beginner-friendly blogger who loves
+        learning and sharing simple ideas about money,
+        technology, and growth.
+      </p>
+    </div>
 
-</body>
-</html>
+    <div class="card" id="contact">
+      <h2>
